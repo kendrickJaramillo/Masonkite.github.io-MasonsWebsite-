@@ -1,56 +1,82 @@
+/* General styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+    margin: 0;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+    background: linear-gradient(to bottom, #a0e7e5, #b4f8c8, #fbe7c6);
+    color: #333;
+    line-height: 1.6;
 }
 
+/* Header styles */
 header {
-  background-color: #6c5ce7;
-  color: white;
-  text-align: center;
-  padding: 20px 10px;
+    text-align: center;
+    background-color: #ffbe0b;
+    padding: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #555;
+    font-size: 2.5em;
+    border-bottom: 8px solid #f77f00;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background: #a29bfe;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
+/* Section styles */
 main {
-  padding: 20px;
+    padding: 20px;
 }
 
-main section {
-  margin-bottom: 30px;
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-main img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+section h2 {
+    background-color: #ff006e;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 3px #000;
 }
 
+/* List styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e0c3fc;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styles */
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #6c5ce7;
-  color: white;
+    text-align: center;
+    background-color: #6a0572;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+}
+
+/* Add a playful dinosaur background */
+body::before {
+    content: "";
+    background-image: url('https://i.imgur.com/lSWIDhP.png'); /* Replace with any dinosaur-themed background */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
